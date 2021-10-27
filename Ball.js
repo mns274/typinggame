@@ -31,6 +31,7 @@ class Ball {
         ellipse(this.ballX, this.ballY, 50, 50);
     }
 
+    //Tried to add a tactile pop for when a ball hit the wall but ended up not working!
     // sound() {
     //     if (this.ballX = 0) {
     //         popsound.play()

@@ -9,9 +9,6 @@
 //"Gave Over Arcade" by myfox14
 //https://freesound.org/people/myfox14/sounds/382310/
 
-
-//I'm going to play with the BG color probably using chroma to go from green to red
-
 let typeword = [];
 let bounceword = [];
 let balls = []
@@ -22,7 +19,7 @@ let typefinal;
 let table;
 let coin;
 let popsound;
-let over
+let over;
 let rectcolor = chroma('hotpink').rgb()
 
 let timercolor = chroma.scale(["chartreuse", "crimson"])
@@ -138,6 +135,8 @@ function draw() {
 		textSize(75)
 		text('Final Score: ' + score, width/2, height*.25)
 
+
+		//Figuring out noLoop was a clean way to "end" the game
 		noLoop()
 		table.stop()
 		over.play()
